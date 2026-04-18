@@ -10,7 +10,7 @@ const mailSender = async (email, title, body) => {
       },
       secure: false,
     })
-
+    // sending mail to the user
     let info = await transporter.sendMail({
       from: `"Studynotion | CodeHelp" <${process.env.MAIL_USER}>`, // sender address
       to: `${email}`, // list of receivers
